@@ -119,6 +119,7 @@ nav {
     background-color: rgba(18, 34, 0, 0.8);
     padding: 0 1em;
     position: relative;
+    border-top: 1px solid rgb(131, 151, 74);
 
     ul {
         font-size: 1.2em;
