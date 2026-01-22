@@ -22,7 +22,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
             </li>
-            <li><a href="index_en.php" class="links">EN</a></li>
+            <li><a href="#" class="links">EN</a></li>
         </ul>
     </nav>
 </header>

@@ -3,11 +3,4 @@
 <a href="https://www.linoart.com/index-bg.php" target="_blank" title="Дизайн студио">© 2026 дизайн:  Линоарт студио</a>
 </footer>
 
-<script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const menuElement = document.getElementById('menu');
-    mobileMenuButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        menuElement.classList.toggle('show-menu');        
-    });
-</script>
+<script src="js/menu-1.0.js"></script>
