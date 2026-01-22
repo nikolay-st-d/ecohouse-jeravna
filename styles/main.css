@@ -1,0 +1,100 @@
+main {
+    color: #000000;
+    text-align: left;
+    padding: 1em;
+    background-color: #98a581;
+
+    & ul {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        padding: 2em 4em;
+    }
+}
+
+main a:link,
+main a:visited {
+    text-decoration: none;
+    color: #f2ffed;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: #ffcc66;
+}
+
+main > img {
+    display: block;
+    border-radius: 0.4em;
+    margin: 1em 0;
+}
+
+.home-page-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 2em 0;
+    justify-content: space-between;
+
+    & img {
+        flex: 1 1 330px;
+        width: 330px;
+        border-radius: 0.4em;
+    }
+}
+
+fieldset {
+    width: fit-content;
+    padding: 1em;
+    margin: 2em 0;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: white;
+    border: 3px solid white;
+    border-radius: 0.6em;
+
+    & legend {
+        padding: 0 0.5em;
+        margin: 0;
+
+        & h3 {
+            font-size: 1.6em;
+            font-weight: 400;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-shadow: 0.05em 0.05em 0.1em rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    & p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+strong {
+    font-weight: 700;
+}
+
+.red {
+    font-weight: 400;
+    color: #883200;
+}
+.green {
+    font-size: 0.8em;
+    color: #006600;
+}
+
+.xsmall {
+    font-size: 0.8em;
+    margin: 0.4em 0.2em;
+}
+
+.image-left {
+    float: left;
+    margin: 0 1em 1em 0;
+}

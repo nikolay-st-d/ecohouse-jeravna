@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #739357;
+    text-align: center;
+    background-color: #0b1600;
+    padding: 2em 0.5em;
+}
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: #739357;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #94bc70;
+}

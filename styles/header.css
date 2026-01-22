@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    aspect-ratio: 1.2 / 1;
+    background-color: #88966e;
+    background-image: url('../images/header.webp');
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        display: block;
+        width: fit-content;
+        font-size: 2em;
+        font-weight: 800;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
+        padding: 0.2em;
+        margin-top: 50%;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    header {
+        aspect-ratio: 1.8 / 1;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin-top: 35%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        aspect-ratio: 2.143 / 1;
+    }
+
+    header h1 {
+        font-size: 3em;
+        margin-top: 30%;
+    }
+}
