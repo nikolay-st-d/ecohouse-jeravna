@@ -1,0 +1,36 @@
+RewriteEngine On
+RewriteBase /
+
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+# rewritecond %{http_host} ^ecohotel.jeravna.com [nc]
+# rewriterule ^(.*)$ https://www.ecohotel.jeravna.com/$1 [r=301,nc]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
+
+
+# Redirect html requests to php files
+
+# RewriteCond %{THE_REQUEST} (.*)\.php  
+# RewriteRule ^(.*)\.php $1.html [R=301,L]  
+
+# RewriteCond %{THE_REQUEST} (.*)\.html  
+# RewriteRule ^(.*)\.html $1.php [R=301,L]
+
+# Redirect index files to root
+RewriteCond %{THE_REQUEST} ^.*/index.php 
+RewriteRule ^(.*)index.php$ /$1 [QSD,R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.htm 
+RewriteRule ^(.*)index.htm$ /$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.html 
+RewriteRule ^(.*)index.html$ /$1 [R=301,L]
+
+# cache 1 Month for most static assets default 2592000 = 30 days
+<filesMatch ".(css|jpg|jpeg|png|gif|ico|webp|js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+ErrorDocument 404 404.php
