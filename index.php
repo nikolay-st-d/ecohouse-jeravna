@@ -11,7 +11,7 @@ include 'includes/head.php';
 	<main>
 		<h2>Добре дошли във вашата къща за гости!</h2>
 		<p>Предлагаме Ви комбинация от автентична възрожденска обстановка и съвременен лукс.</p>
-		<section class="home-page-images">
+		<section class="images-set">
 			<img src="images/home1.jpg" alt="Екокъща Жеравна">
 			<img src="images/home2.jpg" alt="Екохотел Жеравна">
 			<img src="images/home3.jpg" alt="Жеравна - къща за гости">

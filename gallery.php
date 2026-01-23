@@ -2,6 +2,36 @@
 $title = 'Еко-къща ЖЕРАВНА - фото-галерия';
 $description = 'Фото галериа - Еко-къща Жеравна, в центъра на село Жеравна.';
 include 'includes/head.php';
+
+$photos = [
+	'eco-house-01.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-02.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-03.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-04.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-05.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-06.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-07.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-08.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-09.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-10.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-11.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-12.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-13.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-14.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-15.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-16.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-17.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-18.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-19.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-20.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-21.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-22.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-23.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-24.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-25.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-26.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+	'eco-house-27.jpg' => 'Еко-къща Жеравна - изглед от външната страна',
+]
 ?>
 
 <body>
@@ -10,35 +40,21 @@ include 'includes/head.php';
 
 	<main>
 		<h2>Галерия</h2>
-		<img src="photos/ecohouse14.jpg">
-		<img src="photos/ecohotel_jeravna_01.jpg">
-		<img src="photos/ecohouse1.jpg">
-		<img src="photos/ecohouse2.jpg">
-		<img src="photos/ecohouse3.jpg">
-		<img src="photos/ecohouse4.jpg">
-		<img src="photos/ecohouse5.jpg">
-		<img src="photos/ecohouse6.jpg">
-		<img src="photos/ecohouse7.jpg">
-		<img src="photos/ecohouse8.jpg">
-		<img src="photos/ecohouse9.jpg">
-		<img src="photos/ecohouse10.jpg">
-		<img src="photos/ecohouse11.jpg">
-		<img src="photos/ecohouse12.jpg">
-		<img src="photos/ecohouse13.jpg">
-		<img src="photos/ecohouse15.jpg">
-		<img src="photos/ecohouse16.jpg">
-		<img src="photos/ecohotel_jeravna_03.jpg">
-		<img src="photos/ecohotel_jeravna_04.jpg">
-		<img src="photos/ecohotel_jeravna_05.jpg">
-		<img src="photos/ecohotel_jeravna_06.jpg">
-		<img src="photos/ecohotel_jeravna_10.jpg">
-		<img src="photos/ecohotel_jeravna_07.jpg">
-		<img src="photos/ecohotel_jeravna_12.jpg">
-		<p class="red">фотографии: &copy; 2003-2010 Николай Димитров. Всички права запазени!</p>
+		<p class="xsmall">Щракнете за отваряне в пълен размер, щракнете пак за затваряне.</p>
+		<div class="gallery-wrapper">
+			<?php foreach ($photos as $filename => $alt): ?>
+				<div class="gallery-thumb"><img src="photos/<?php echo $filename; ?>" alt="<?php echo $alt; ?>"></div>
+			<?php endforeach; ?>
+		</div>
+
 		<p class="up-link"><a href="#" title="Начало на страницата"><i class="fa-solid fa-angles-up"></i> нагоре</a></p>
 	</main>
 
 	<?php include 'includes/footer.php'; ?>
+
+	<div id="gallery-overlay"></div>
+
+	<script src="js/gallery-1.0.js"></script>
 
 </body>
 

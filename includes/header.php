@@ -6,7 +6,8 @@
         </ul>
         <ul id="menu">
             <li><a href="./" class="links"><i class="fa-solid fa-house-chimney"></i></a></li>
-            <li><a href="about.php" class="links">ЗА КЪЩАТА</a></li>
+            <li><a href="about.php" class="links">КЪЩАТА</a></li>
+            <li><a href="zheravna.php" class="links">ЖЕРАВНА</a></li>
             <li><a href="gallery.php" class="links">ГАЛЕРИЯ</a></li>
             <li><a href="pricelist.php" class="links">ЦЕНИ</a></li>
             <li><a href="contacts.php" class="links">РЕЗЕРВАЦИЯ</a></li>
