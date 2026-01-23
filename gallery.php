@@ -1,4 +1,5 @@
 <?php
+$lang = 'bg';
 $title = 'Еко-къща ЖЕРАВНА - фото-галерия';
 $description = 'Фото галериа - Еко-къща Жеравна, в центъра на село Жеравна.';
 include 'includes/head.php';
@@ -36,11 +37,11 @@ $photos = [
 
 <body>
 
-	<?php include 'includes/header.php'; ?>
+	<?php include 'includes/header_' . $lang . '.php'; ?>
 
 	<main>
 		<h2>Галерия</h2>
-		<p class="xsmall">Щракнете за отваряне в пълен размер, щракнете пак или натиснете ESC за затваряне.</p>
+		<p class="xsmall">Щракнете за отваряне в пълен размер, щракнете отново или натиснете ESC за затваряне.</p>
 		<div class="gallery-wrapper">
 			<?php foreach ($photos as $filename => $alt): ?>
 				<div class="gallery-thumb"><img src="photos/<?php echo $filename; ?>" alt="<?php echo $alt; ?>"></div>
@@ -50,7 +51,7 @@ $photos = [
 		<p class="up-link"><a href="#" title="Начало на страницата"><i class="fa-solid fa-angles-up"></i> нагоре</a></p>
 	</main>
 
-	<?php include 'includes/footer.php'; ?>
+	<?php include 'includes/footer_' . $lang . '.php'; ?>
 
 	<div id="gallery-overlay"></div>
 

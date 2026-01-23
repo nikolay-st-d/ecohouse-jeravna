@@ -1,4 +1,5 @@
 <?php
+$lang = 'bg';
 $title = 'Еко-къща ЖЕРАВНА - къща за гости със стил в центъра на Жеравна';
 $description = 'Луксозна къща за гости с автентична възрожденска обстановка и архитектура, в центъра на Жеравна. Механа само за гостите на къщата.';
 include 'includes/head.php';
@@ -6,7 +7,7 @@ include 'includes/head.php';
 
 <body>
 
-	<?php include 'includes/header.php'; ?>
+	<?php include 'includes/header_'.$lang.'.php'; ?>
 
 	<main>
 		<h2>Добре дошли във вашата къща за гости!</h2>
@@ -19,7 +20,7 @@ include 'includes/head.php';
 		<p>Къща за гости "Еко-къща Жеравна" се намира в сърцето на възрожденското село Жеравна, в непосредствена близост до всички забележителности и туристически маршрути.</p>
 	</main>
 
-	<?php include 'includes/footer.php'; ?>
+	<?php include 'includes/footer_'.$lang.'.php'; ?>
 
 </body>
 

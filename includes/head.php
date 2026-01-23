@@ -1,7 +1,3 @@
-<?php
-$lang = isset($_GET['lang']) ? $_GET['lang'] : 'bg';
-?>
-
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
 

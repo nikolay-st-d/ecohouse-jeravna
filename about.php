@@ -1,4 +1,5 @@
 <?php
+$lang = 'bg';
 $title = 'Еко-къща ЖЕРАВНА - информация за къщата за гости';
 $description = 'Луксозен хотел (къща за гости) с автентична възрожденска обстановка и архитектура, в центъра на Жеравна. Подробно за къщата.';
 include 'includes/head.php';
@@ -6,7 +7,7 @@ include 'includes/head.php';
 
 <body>
 
-	<?php include 'includes/header.php'; ?>
+	<?php include 'includes/header_' . $lang . '.php'; ?>
 
 	<main>
 		<h2>За Еко-къща Жеравна - подробна информация</h2>
@@ -43,7 +44,7 @@ include 'includes/head.php';
 		<p class="up-link"><a href="#" title="Начало на страницата"><i class="fa-solid fa-angles-up"></i> нагоре</a></p>
 	</main>
 
-	<?php include 'includes/footer.php'; ?>
+	<?php include 'includes/footer_' . $lang . '.php'; ?>
 
 </body>
 
