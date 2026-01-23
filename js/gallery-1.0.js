@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 overlay.style.display = 'none';
                 overlay.innerHTML = '';
             });
+            window.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    overlay.style.display = 'none';
+                    overlay.innerHTML = '';
+                }
+            });
         });
     });
 });

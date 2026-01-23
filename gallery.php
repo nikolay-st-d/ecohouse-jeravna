@@ -40,7 +40,7 @@ $photos = [
 
 	<main>
 		<h2>Галерия</h2>
-		<p class="xsmall">Щракнете за отваряне в пълен размер, щракнете пак за затваряне.</p>
+		<p class="xsmall">Щракнете за отваряне в пълен размер, щракнете пак или натиснете ESC за затваряне.</p>
 		<div class="gallery-wrapper">
 			<?php foreach ($photos as $filename => $alt): ?>
 				<div class="gallery-thumb"><img src="photos/<?php echo $filename; ?>" alt="<?php echo $alt; ?>"></div>
