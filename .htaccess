@@ -12,14 +12,6 @@ RewriteBase /
 # php -- END cPanel-generated handler, do not edit
 
 
-# Redirect html requests to php files
-
-# RewriteCond %{THE_REQUEST} (.*)\.php  
-# RewriteRule ^(.*)\.php $1.html [R=301,L]  
-
-# RewriteCond %{THE_REQUEST} (.*)\.html  
-# RewriteRule ^(.*)\.html $1.php [R=301,L]
-
 # Redirect index files to root
 RewriteCond %{THE_REQUEST} ^.*/index.php 
 RewriteRule ^(.*)index.php$ /$1 [QSD,R=301,L]
