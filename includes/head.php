@@ -14,7 +14,7 @@
 			"@context": "https://schema.org",
 			"@type": "LocalBusiness",
 			"name": "Къща за гости Еко къща Жеравна",
-			"image": "https://www.ecohotel.jeravna.com/photos/eco-house-04.jpg",
+			"image": "https://www.ecohotel.jeravna.com/images/eco-house-main-photo.jpg",
 			"url": "https://www.ecohotel.jeravna.com/",
 			"telephone": "+359889672732",
 			"address": {
