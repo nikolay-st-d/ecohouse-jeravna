@@ -73,3 +73,8 @@ nav a:hover {
     text-decoration: none;
     color: #ffffff;
 }
+
+.link-active {
+    color: #d1ffb7 !important;
+    border-bottom: 1px dotted #d1ffb7;
+}

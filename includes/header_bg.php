@@ -1,16 +1,17 @@
 <header>
     <h1>Еко къща Жеравна</h1>
     <nav>
+
         <ul>
             <li><a id="mobile-menu-button" href="#" title="open menu"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
         <ul id="menu">
-            <li><a href="./" class="links"><i class="fa-solid fa-house-chimney"></i></a></li>
-            <li><a href="about.php" class="links">КЪЩАТА</a></li>
-            <li><a href="zheravna.php" class="links">ЖЕРАВНА</a></li>
-            <li><a href="gallery.php" class="links">ГАЛЕРИЯ</a></li>
-            <li><a href="pricelist.php" class="links">ЦЕНИ</a></li>
-            <li><a href="contacts.php" class="links">РЕЗЕРВАЦИЯ</a></li>
+            <li><a <?php echo str_contains($current_page, 'index') ? ' class="link-active"' : '' ?> href="./"><i class="fa-solid fa-house-chimney"></i></a></li>
+            <li><a <?php echo str_contains($current_page, 'about') ? ' class="link-active"' : '' ?> href="about.php">КЪЩАТА</a></li>
+            <li><a <?php echo str_contains($current_page, 'zheravna') ? ' class="link-active"' : '' ?> href="zheravna.php">ЖЕРАВНА</a></li>
+            <li><a <?php echo str_contains($current_page, 'gallery') ? ' class="link-active"' : '' ?> href="gallery.php">ГАЛЕРИЯ</a></li>
+            <li><a <?php echo str_contains($current_page, 'pricelist') ? ' class="link-active"' : '' ?> href="pricelist.php">ЦЕНИ</a></li>
+            <li><a <?php echo str_contains($current_page, 'contacts') ? ' class="link-active"' : '' ?> href="contacts.php">РЕЗЕРВАЦИЯ</a></li>
         </ul>
         <ul>
             <li>
@@ -23,7 +24,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
             </li>
-            <li><a href="home-en.php" class="links" title="English">EN</a></li>
+            <li><a href="home-en.php" title="English">EN</a></li>
         </ul>
     </nav>
 </header>

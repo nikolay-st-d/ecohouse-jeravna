@@ -5,12 +5,12 @@
             <li><a id="mobile-menu-button" href="#" title="open menu"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
         <ul id="menu">
-            <li><a href="home-en.php" class="links"><i class="fa-solid fa-house-chimney"></i></a></li>
-            <li><a href="about-en.php" class="links">THE HOUSE</a></li>
-            <li><a href="zheravna-en.php" class="links">ZHERAVNA</a></li>
-            <li><a href="gallery-en.php" class="links">GALLERY</a></li>
-            <li><a href="pricelist-en.php" class="links">PRICES</a></li>
-            <li><a href="contacts-en.php" class="links">BOOK</a></li>
+            <li><a <?php echo str_contains($current_page, 'home') ? ' class="link-active"' : '' ?> href="home-en.php"><i class="fa-solid fa-house-chimney"></i></a></li>
+            <li><a <?php echo str_contains($current_page, 'about') ? ' class="link-active"' : '' ?> href="about-en.php">THE HOUSE</a></li>
+            <li><a <?php echo str_contains($current_page, 'zheravna') ? ' class="link-active"' : '' ?> href="zheravna-en.php">ZHERAVNA</a></li>
+            <li><a <?php echo str_contains($current_page, 'gallery') ? ' class="link-active"' : '' ?> href="gallery-en.php">GALLERY</a></li>
+            <li><a <?php echo str_contains($current_page, 'pricelist') ? ' class="link-active"' : '' ?> href="pricelist-en.php">PRICES</a></li>
+            <li><a <?php echo str_contains($current_page, 'contacts') ? ' class="link-active"' : '' ?> href="contacts-en.php">BOOK</a></li>
         </ul>
         <ul>
             <li>
@@ -23,7 +23,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </a>
             </li>
-            <li><a href="./" class="links" title="Bulgarian">BG</a></li>
+            <li><a href="./" title="Bulgarian">BG</a></li>
         </ul>
     </nav>
 </header>
