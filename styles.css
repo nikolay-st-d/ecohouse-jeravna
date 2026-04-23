@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
-@import url('styles/reset.css');
-@import url('styles/nav.css');
-@import url('styles/header.css');
-@import url('styles/main.css');
-@import url('styles/gallery.css');
-@import url('styles/contact.css');
-@import url('styles/footer.css');
+@import url('styles/reset.css?v=20260202');
+@import url('styles/nav.css?v=20260202');
+@import url('styles/header.css?v=20260202');
+@import url('styles/main.css?v=20260202');
+@import url('styles/gallery.css?v=20260202');
+@import url('styles/contact.css?v=20260202');
+@import url('styles/footer.css?v=20260202');
 
 html {
     font-family: Manrope, Verdana, sans-serif;

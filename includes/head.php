@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?= $title ?></title>
 	<meta name="description" content="<?= $description ?>">
-	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="styles.css?v=20260202" rel="stylesheet" type="text/css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<script type="application/ld+json">

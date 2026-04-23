@@ -1,28 +1,28 @@
 RewriteEngine On
 RewriteBase /
 
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
-
-# rewritecond %{http_host} ^ecohotel.jeravna.com [nc]
-# rewriterule ^(.*)$ https://www.ecohotel.jeravna.com/$1 [r=301,nc]
-
-# php -- BEGIN cPanel-generated handler, do not edit
-# This domain inherits the “PHP” package.
-# php -- END cPanel-generated handler, do not edit
-
-
 # Redirect index files to root
-RewriteCond %{THE_REQUEST} ^.*/index.php 
-RewriteRule ^(.*)index.php$ /$1 [QSD,R=301,L]
-RewriteCond %{THE_REQUEST} ^.*/index.htm 
-RewriteRule ^(.*)index.htm$ /$1 [R=301,L]
-RewriteCond %{THE_REQUEST} ^.*/index.html 
-RewriteRule ^(.*)index.html$ /$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /index\.(php|html) [NC]
+RewriteRule ^(.*)index\.(php|html)$ /$1 [R=301,L]
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^ecohotel\.jeravna\.com [NC]
+RewriteRule ^(.*)$ https://www.ecohotel.jeravna.com/$1 [R=301,L]
 
 # cache 1 Month for most static assets default 2592000 = 30 days
 <filesMatch ".(css|jpg|jpeg|png|gif|ico|webp|js)$">
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-ErrorDocument 404 404.php
+ErrorDocument 404 /404.php
+
+Redirect 301 /about.html /about.php
+Redirect 301 /contacts.html /contacts.php
+Redirect 301 /gallery.html /gallery.php
+Redirect 301 /pricelist.html /pricelist.php
+Redirect 301 /index_en.html /home-en.php
+Redirect 301 /about_en.html /about-en.php
+Redirect 301 /contacts_en.html /contacts-en.php
+Redirect 301 /gallery_en.html /gallery-en.php
+Redirect 301 /pricelist_en.html /pricelist-en.php
