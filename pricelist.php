@@ -26,8 +26,8 @@ include 'includes/head.php';
 		<h3>Зимен сезон:</h3>
 		<p>16 Октомври - 6 Май</p>
 		<ul>
-			<li>двойна стая - <?= displayPrice(44) ?></li>
-			<li>тройна стая - <?= displayPrice(64) ?></li>
+			<li>двойна стая - <?= displayPrice(45) ?></li>
+			<li>тройна стая - <?= displayPrice(65) ?></li>
 			<li>13 места - <?= displayPrice(270) ?></li>
 		</ul>
 

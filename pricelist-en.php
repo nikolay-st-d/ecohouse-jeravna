@@ -26,8 +26,8 @@ include 'includes/head.php';
         <h3>Winter season:</h3>
         <p>October 16 - May 6</p>
         <ul>
-            <li>double room - <?= displayPrice(44) ?></li>
-            <li>tripple room - <?= displayPrice(64) ?></li>
+            <li>double room - <?= displayPrice(45) ?></li>
+            <li>tripple room - <?= displayPrice(65) ?></li>
             <li>all 13 beds - <?= displayPrice(270) ?></li>
         </ul>
 
